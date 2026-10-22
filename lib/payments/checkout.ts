@@ -1,7 +1,5 @@
 import { charge, type ChargeReceipt } from "./charge.ts";
 
-const CENTS_PER_DOLLAR = 100;
-
 /**
  * Charge a checkout total stored in integer cents.
  * @example
@@ -12,5 +10,5 @@ export function checkout(totalCents: number): ChargeReceipt {
     throw new RangeError("totalCents must be a non-negative safe integer");
   }
 
-  return charge(totalCents / CENTS_PER_DOLLAR);
+  return charge(totalCents);
 }
