@@ -3,7 +3,7 @@
 Builds payment provider payloads for checkout. Amounts are stored in integer
 cents and converted at the provider boundary.
 
-This is a demo service. It returns provider payloads and never sends a real
+This is a demo service. It returns provider payloads and does not send a real
 payment.
 
 ## Development
