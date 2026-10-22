@@ -7,7 +7,7 @@ export interface ChargeReceipt {
 
 /**
  * Prepare a USD charge from an amount in dollars.
- * This demo returns the provider payload without sending a real payment.
+ * This demo builds the provider payload and does not send a real payment.
  * @example
  * charge(49); // => { amountCents: 4900, currency: "USD" }
  */
